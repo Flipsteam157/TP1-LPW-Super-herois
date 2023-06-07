@@ -1,0 +1,67 @@
+html, body 
+{
+    height: 100%;
+    margin: 0px;
+}
+#principal
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+#lado-marvel
+{
+    background-color: red;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+#lado-dc
+{
+    background-color: blue;
+    width: 15%;;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+#centro
+{
+    background-color: black;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+#principal img
+{
+    width: 100%;
+}
+#centro p
+{
+    color: aliceblue;
+    font-size: 60px;
+}
+#principal span
+{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    border: solid 1px white;
+
+}
+#principal span a
+{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px ;
+}
