@@ -1,67 +1,185 @@
-html, body 
-{
+html,
+body {
     height: 100%;
     margin: 0px;
 }
-#principal
-{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    
-}
-#lado-marvel
-{
-    background-color: red;
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-}
-#lado-dc
-{
-    background-color: blue;
-    width: 15%;;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-}
-#centro
-{
-    background-color: black;
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
 
-}
-#principal img
-{
-    width: 100%;
-}
-#centro p
-{
-    color: aliceblue;
-    font-size: 60px;
-}
-#principal span
-{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding: 20px;
-    background-color: black;
-    border: solid 1px white;
+@media (min-width: 700px) {
+    #principal {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
 
+    .laterais {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    #lado-marvel {
+        background-color: red;
+    }
+
+    #lado-dc {
+        background-color: blue;
+    }
+
+    #centro {
+        position: relative;
+        background-color: black;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: -1;
+
+    }
+
+    #principal img {
+        width: 100%;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 10%;
+        background-color: black;
+        border: solid 1px white;
+        position: relative;
+
+    }
+
+    .botao a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #centro video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #centro .content {
+        z-index: 0;
+        width: 40%;
+        height: 25%;
+        background-color: rgba(91, 97, 97, 0.26);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #centro .content p {
+        font-size: 1.5em;
+        color: #ffff;
+    }
 }
-#principal span a
-{
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 20px ;
+@media (max-width: 699px){
+    #principal {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .laterais {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #lado-marvel {
+        background-color: red;
+    }
+
+    #lado-dc {
+        background-color: blue;
+    }
+
+    #centro {
+        background-color: black;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+    }
+
+    #principal img {
+        height: 100%;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        padding: 1%;
+        background-color: black;
+        border: solid 1px white;
+        position: relative;
+
+    }
+
+    .botao a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    #centro video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #centro .content {
+        z-index: 0;
+        margin: auto;
+        width: 40%;
+        height: 25%;
+        background-color: rgba(91, 97, 97, 0.199);
+        border: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #centro .content p {
+        font-size: 1.5em;
+        color: #ffff;
+    }
+}
+@media (max-width: 480px) {
+    #principal img {
+        height: 70%;
+    }
+    .botao a {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 380px) {
+    #principal img {
+        height: 50%;
+    }
 }
