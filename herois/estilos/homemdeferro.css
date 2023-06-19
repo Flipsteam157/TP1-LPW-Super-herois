@@ -1,0 +1,73 @@
+body, html{
+    min-height: 100%
+}
+body {
+    background-image: url('imagens/tony\ stark.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: trocar-imagens 15s infinite;
+  }
+
+  @keyframes trocar-imagens {
+    0% {
+      background-image: url('../imagens/tony\ stark.jpg');
+    }
+    33% {
+      background-image: url('../imagens/tony\ stark\ 2.jpg');
+    }
+    66% {
+      background-image: url('../imagens/tony\ stark\ 3.jpg');
+    }
+    100% {
+      background-image: url('../imagens/tony\ stark\ 4.jpg');
+    }
+  }
+#conteudo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(63, 56, 56, 0.300);
+    z-index: 1;
+    overflow: auto;
+    text-align: center;
+}
+.container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 50%;
+    width: auto;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+.imagem {
+    display: none;
+  }
+
+.imagem-ativa {
+    display: block;
+  }
+.container img{
+    border: 5px solid black;
+}
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+  .botao {
+    width: 90px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
