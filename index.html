@@ -14,9 +14,13 @@
     <div id="principal">
         <div id="lado-marvel" class="laterais">
             <img src="imagens/marvel logo.png" alt="logo da Marvel">
-            <span class="botao">
-                <a href="marvel.html">Conheça mais</a>
-            </span>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropdown1')">Conheça mais</button>
+                <div class="dropdown-content" id="dropdown1">
+                  <a href="herois/homemdeferro.html">Homem de Ferro</a>
+                  <a href="herois/homemaranha.html">Homem Aranha</a>
+                </div>
+              </div>
             <img src="imagens/iron man.png" alt="imagem do homem de ferro">
         </div>
 
@@ -29,9 +33,13 @@
 
         <div id="lado-dc" class="laterais">
             <img src="imagens/dc logo.png" alt="logo da DC">
-            <span class="botao">
-                <a href="dc.html">Conheça mais</a>
-            </span>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropdown2')">Conheça mais</button>
+                <div class="dropdown-content" id="dropdown2">
+                  <a href="herois/batman.html">Batman</a>
+                  <a href="#">Opção 2</a>
+                </div>
+              </div>
             <img src="imagens/batman.png" alt="imagem do batman">
         </div>
     </div>
@@ -47,6 +55,7 @@
             
             
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>

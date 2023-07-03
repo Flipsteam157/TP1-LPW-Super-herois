@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   margin-right: 30%;
   margin-left: 30%;
-  position: absolute;
+  position: static;
   bottom: 1%;
 }
 
@@ -105,7 +105,5 @@ body {
   .container{
     height: 25%;
   }
-  .botoes{
-    bottom: -1%;
-  }
+
 }
