@@ -1,0 +1,28 @@
+html, body{
+    min-height: 100%;
+    
+}
+body{
+    background-image: url(imagens/backgorund\ preto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+th, td {
+    color: white;
+}
+th{
+    color: aqua;
+}
+a{
+    text-decoration: none;
+    color: gold;
+}

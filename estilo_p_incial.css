@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@1,100&display=swap');
 html,
 body {
     height: 100%;
@@ -199,6 +200,10 @@ nav {
     #dock {
         bottom: 20%;
     }
+    #dropdown2{
+        top: -80px;
+        right: 0;
+      }
 }
 @media (max-width: 480px) {
     #principal img {
@@ -230,18 +235,17 @@ nav {
 }
 
   
-  /* Estilo do dropdown */
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
   .dropbtn {
-    background-color: #4CAF50;
+    background-color: rgb(78, 75, 75);
     color: white;
     padding: 12px;
     font-size: 16px;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
   }
   
@@ -249,7 +253,7 @@ nav {
     background-color: #3e8e41;
   }
   
-  /* Estilo do dropdown */
+ 
   .dropdown-content {
     display: none;
     position: absolute;
@@ -259,15 +263,15 @@ nav {
     z-index: 1;
   }
   
-  /* Estilos específicos do dropdown 1 */
+ 
   #dropdown1 .dropdown-content {
-    top: 40px; /* Posição do dropdown 1 em relação ao botão */
+    top: 40px;
     left: 0;
   }
   
-  /* Estilos específicos do dropdown 2 */
+
   #dropdown2 .dropdown-content {
-    top: 40px; /* Posição do dropdown 2 em relação ao botão */
+    top: 40px;
     right: 0;
   }
   
@@ -285,7 +289,12 @@ nav {
   .show {
     display: block;
   }
-  
+  h1{
+    font-family: Bangers;
+    color: white;
+    font-size: 3em;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
   
 
 
