@@ -87,3 +87,8 @@ h1{
 h2::selection {
     background-color: yellow;
   }
+@media (max-width: 700px){
+    h1{
+        font-size: 3em
+    }
+}
