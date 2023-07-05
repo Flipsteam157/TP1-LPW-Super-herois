@@ -41,6 +41,7 @@ body {
     z-index: 1;
     overflow: auto;
     text-align: center;
+    border-radius: 15px;
 }
 
 #foto{
@@ -65,4 +66,24 @@ body {
     text-align: left;
     text-decoration: none;
     color: darkcyan;
+  }
+
+p{
+    background-color: rgba(0, 255, 255, 0.3);
+    padding: 6px;
+    border-radius: 8px;
+    margin: 15px;
+    font-size: 1.3em;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 1px red;
+}
+h1{
+    font-family: Impact;
+    -webkit-text-stroke: 1px blue;
+    font-size: 5em;
+}
+h2::selection {
+    background-color: yellow;
   }
