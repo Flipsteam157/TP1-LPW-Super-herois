@@ -40,16 +40,15 @@ body {
   overflow: auto;
   text-align: center;
 }
-.ferro{
+
+.ferro {
   background-color: rgba(255, 255, 255, 0.466);
   border-radius: 20px;
-  width: 1500px;
-  height: 1310px;
-  position: relative;
-  left: 150px;
+  margin: 5%;
   padding: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .container {
   display: flex;
   position: relative;
@@ -91,42 +90,58 @@ body {
   align-items: center;
   cursor: pointer;
 }
-@media (min-width:700px){
-  #youtube{
+
+@media (min-width:700px) {
+  #youtube {
     width: 700px;
     height: 393px;
   }
 }
-@media (max-width:700px){
-  #youtube{
+
+@media (max-width:700px) {
+  #youtube {
     width: 500px;
     height: 281px;
   }
-  .container{
+
+  .container {
     height: 35%;
   }
 }
-@media (max-width:500px){
-  #youtube{
+
+@media (max-width:500px) {
+  #youtube {
     width: 300px;
     height: 168px;
   }
-  .container{
+
+  .container {
     height: 25%;
   }
 
 }
-#anotacao{
+#fim{
+  display: flex;
+  justify-content: center;
+}
+#anotacao {
   background-color: rgba(255, 255, 255, 0.466);
-  position: relative;
   border-radius: 20px;
-  width: 700px;
-  height: 100px;
-  left: 600px;
+  padding: 2%;
+  width: 45%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1{
+
+h1 {
   font-size: 50px;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#voltar{
+  position: relative;
+  right: 40%;
+  text-align: left;
+  text-decoration: none;
+  color: darkcyan;
 }

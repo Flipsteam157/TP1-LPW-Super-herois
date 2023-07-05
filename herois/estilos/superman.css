@@ -1,0 +1,68 @@
+body,
+html {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    background-image: url('../imagens/superman.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: trocar-imagens 20s infinite;
+}
+
+@keyframes trocar-imagens {
+    0% {
+        background-image: url('../imagens/superman.png');
+    }
+
+    33% {
+        background-image: url('../imagens/superman\ 2.png');
+    }
+
+    66% {
+        background-image: url('../imagens/superman\ 4.jpg');
+    }
+
+    100% {
+        background-image: url('../imagens/superman\ 3.jpg');
+    }
+}
+
+#conteudo {
+    min-height: 100%;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(63, 56, 56, 0.300);
+    z-index: 1;
+    overflow: auto;
+    text-align: center;
+}
+
+#foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 375px;
+    width: 300px;
+    background-image: url('../imagens/superman\ 99.png');
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s linear;
+    background-repeat: no-repeat; 
+}
+#foto:hover{
+    background-image: url('../imagens/capitao\ patria.png');    
+}
+
+#voltar{
+    position: relative;
+    right: 40%;
+    text-align: left;
+    text-decoration: none;
+    color: darkcyan;
+  }
